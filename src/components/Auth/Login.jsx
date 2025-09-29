@@ -18,7 +18,7 @@ const Login = () => {
 
         try {
             await signInWithEmailAndPassword(auth, email, password);
-            navigate("/"); // Login successful → go to dashboard
+            navigate("/Dashboard"); // Login successful → go to dashboard
         } catch (err) {
             console.error("Login error:", err);
 

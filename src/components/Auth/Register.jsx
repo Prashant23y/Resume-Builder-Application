@@ -15,7 +15,7 @@ const Register = () => {
 
         try {
             await createUserWithEmailAndPassword(auth, email, password);
-            navigate("/"); // go to dashboard after successful registration
+            navigate("/Dashboard"); // go to dashboard after successful registration
         } catch (err) {
             console.error("Register error:", err);
             if (err.code === "auth/email-already-in-use") {
